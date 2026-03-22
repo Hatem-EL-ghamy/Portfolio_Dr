@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="htmlRoot">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-en="Dr. Abdelrahman Ashraf – Dentist" data-ar="د/ عبدالرحمن أشرف – طبيب أسنان">Dr. Abdelrahman Ashraf – Dentist</title>
+  <meta name="description" content="Portfolio of Dr. Abdelrahman Ashraf, General Dentist. Book your appointment now." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-icon"><i class="fas fa-tooth"></i></span>
+        <div class="logo-text">
+          <span class="logo-main" data-en="Dent / Abdelrahman Ashraf" data-ar="د/ عبدالرحمن أشرف">Dent / Abdelrahman Ashraf</span>
+          <span class="logo-sub" data-en="General Dentist 🦷" data-ar="طبيب أسنان عام 🦷">General Dentist 🦷</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-en="Home" data-ar="الرئيسية">Home</a></li>
+        <li><a href="#about" class="nav-link" data-en="About" data-ar="عن الدكتور">About</a></li>
+        <li><a href="#services" class="nav-link" data-en="Services" data-ar="الخدمات">Services</a></li>
+        <li><a href="#gallery" class="nav-link" data-en="Gallery" data-ar="المعرض">Gallery</a></li>
+        <li><a href="#contact" class="nav-link" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <!-- Language Toggle -->
+        <button class="lang-toggle" id="langToggle" title="Switch Language">
+          <span class="lang-icon">🌐</span>
+          <span class="lang-text" id="langLabel">العربية</span>
+        </button>
+        <a href="tel:01275109353" class="btn-book">
+          <i class="fas fa-calendar-check"></i>
+          <span data-en="Book Now" data-ar="احجز الآن">Book Now</span>
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container hero-container">
+      <div class="hero-content" data-aos="fade-right">
+        <div class="hero-badge">
+          <i class="fas fa-star"></i>
+          <span data-en="Trusted Dentist" data-ar="طبيب أسنان موثوق">Trusted Dentist</span>
+        </div>
+        <h1 class="hero-title">
+          <span data-en="Your Smile," data-ar="ابتسامتك"></span><br />
+          <span class="gradient-text" data-en="Is Our Responsibility" data-ar="أمانة في يدنا">Is Our Responsibility</span>
+        </h1>
+        <p class="hero-desc" data-en="Dr. Abdelrahman Ashraf — General Dentist specializing in comprehensive dental care using modern techniques and expert hands to ensure a healthy, bright smile." data-ar="د/ عبدالرحمن أشرف — طبيب أسنان عام متخصص في تقديم أفضل خدمات رعاية الأسنان بتقنيات حديثة وبأيدٍ خبيرة لضمان ابتسامة صحية ومشرقة.">
+          Dr. Abdelrahman Ashraf — General Dentist specializing in comprehensive dental care using modern techniques and expert hands to ensure a healthy, bright smile.
+        </p>
+        <div class="hero-actions">
+          <a href="tel:01275109353" class="btn-primary">
+            <i class="fas fa-phone"></i>
+            <span data-en="Call Us" data-ar="اتصل بنا">Call Us</span>
+          </a>
+          <a href="#services" class="btn-outline">
+            <i class="fas fa-tooth"></i>
+            <span data-en="Our Services" data-ar="خدماتنا">Our Services</span>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-top"><span class="stat-num" data-target="500">0</span><span>+</span></div>
+            <span class="stat-label" data-en="Cases Done" data-ar="حالة تمت">Cases Done</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <div class="stat-top"><span class="stat-num" data-target="98">0</span><span>%</span></div>
+            <span class="stat-label" data-en="Patient Satisfaction" data-ar="رضا المرضى">Patient Satisfaction</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <div class="stat-top"><span class="stat-num" data-target="6">0</span></div>
+            <span class="stat-label" data-en="Services Offered" data-ar="خدمات متميزة">Services Offered</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrap" data-aos="fade-left">
+        <div class="hero-image-bg"></div>
+        <div class="hero-image-ring"></div>
+        <img
+          src="assets/Pictures of the Dok/571381143_122102594607090224_735560713502659149_n.jpg"
+          alt="Dr. Abdelrahman Ashraf"
+          class="hero-img"
+          id="heroImg"
+        />
+        <div class="hero-badge-float">
+          <i class="fas fa-tooth"></i>
+          <span>Dentist 🦷</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#f0f7ff" d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container about-container">
+      <div class="about-image-wrap" data-aos="fade-right">
+        <div class="about-img-bg"></div>
+        <img
+          src="assets/Pictures of the Dok/570593864_122099437449090224_176085233135631990_n.jpg"
+          alt="Dr. Abdelrahman Ashraf"
+          class="about-img"
+          onerror="this.src='assets/Pictures of the Dok/571381143_122102594607090224_735560713502659149_n.jpg'"
+        />
+        <div class="about-exp-badge">
+          <i class="fas fa-award"></i>
+          <div>
+            <strong data-en="Outstanding Expertise" data-ar="خبرة متميزة">Outstanding Expertise</strong>
+            <span data-en="in Dentistry" data-ar="في طب الأسنان">in Dentistry</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-content" data-aos="fade-left">
+        <div class="section-tag" data-en="About the Doctor" data-ar="عن الدكتور">About the Doctor</div>
+        <h2 class="section-title" data-en="Dr. Abdelrahman Ashraf" data-ar="د/ عبدالرحمن أشرف">Dr. Abdelrahman Ashraf</h2>
+        <p class="about-subtitle" data-en="Dent / Abdelrahman Ashraf" data-ar="د/ عبدالرحمن أشرف — طبيب أسنان عام">Dent / Abdelrahman Ashraf</p>
+        <p class="about-text" data-en="A general dentist with a great passion for helping patients achieve a healthy and beautiful smile. He relies on the latest technologies and medical equipment, and ensures every patient's experience is comfortable, safe, and pain-free." data-ar="طبيب أسنان عام يتميز بشغفه الكبير لمساعدة مرضاه على تحقيق ابتسامة صحية وجميلة. يعتمد على أحدث التقنيات والمعدات الطبية، ويحرص على أن تكون تجربة كل مريض مريحة وآمنة وخالية من الألم.">
+          A general dentist with a great passion for helping patients achieve a healthy and beautiful smile. He relies on the latest technologies and medical equipment, and ensures every patient's experience is comfortable, safe, and pain-free.
+        </p>
+        <p class="about-text" data-en="Dr. Abdelrahman believes that dental health is an essential part of overall health, so he provides comprehensive and integrated care that starts from prevention and extends to treatment and cosmetics." data-ar="يؤمن الدكتور عبدالرحمن بأن صحة الأسنان جزء أساسي من الصحة العامة، لذلك يقدم رعاية شاملة ومتكاملة تبدأ من الوقاية وتمتد إلى العلاج والتجميل.">
+          Dr. Abdelrahman believes that dental health is an essential part of overall health, so he provides comprehensive and integrated care that starts from prevention and extends to treatment and cosmetics.
+        </p>
+        <div class="about-features">
+          <div class="feature">
+            <div class="feature-icon"><i class="fas fa-shield-heart"></i></div>
+            <div>
+              <strong data-en="Safe Treatment" data-ar="علاج آمن">Safe Treatment</strong>
+              <p data-en="Sterile environment & modern tools" data-ar="بيئة معقمة وأدوات حديثة">Sterile environment &amp; modern tools</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong data-en="Flexible Hours" data-ar="مواعيد مرنة">Flexible Hours</strong>
+              <p data-en="Fits your daily schedule" data-ar="تناسب جدولك اليومي">Fits your daily schedule</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon"><i class="fas fa-face-smile"></i></div>
+            <div>
+              <strong data-en="Pain-Free" data-ar="بدون ألم">Pain-Free</strong>
+              <p data-en="Modern techniques for your comfort" data-ar="تقنيات حديثة لراحتك">Modern techniques for your comfort</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon"><i class="fas fa-star"></i></div>
+            <div>
+              <strong data-en="High Quality" data-ar="جودة عالية">High Quality</strong>
+              <p data-en="Best materials and equipment" data-ar="أفضل المواد والخامات">Best materials and equipment</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-actions">
+          <a href="tel:01275109353" class="btn-primary">
+            <i class="fas fa-phone"></i>
+            <span data-en="Contact Us" data-ar="تواصل معنا">Contact Us</span>
+          </a>
+          <a href="mailto:abdo.abdo9876512340@gmail.com" class="btn-outline">
+            <i class="fas fa-envelope"></i>
+            <span data-en="Email Us" data-ar="راسلنا">Email Us</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="services-bg">
+      <div class="services-circle c1"></div>
+      <div class="services-circle c2"></div>
+    </div>
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag" data-en="Our Services" data-ar="خدماتنا">Our Services</div>
+        <h2 class="section-title" data-en="What Do We Offer?" data-ar="ماذا نقدم لك؟">What Do We Offer?</h2>
+        <p class="section-subtitle" data-en="We offer a comprehensive range of dental services with the highest standards of quality and precision." data-ar="نقدم مجموعة متكاملة من خدمات طب الأسنان بأعلى معايير الجودة والدقة">
+          We offer a comprehensive range of dental services with the highest standards of quality and precision.
+        </p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" data-aos="fade-up" data-delay="0">
+          <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          <h3 data-en="Root Canal Treatment" data-ar="حشو العصب">Root Canal Treatment</h3>
+          <p data-en="High-precision root canal therapy to save damaged teeth and restore their natural function." data-ar="علاج قنوات الجذر بدقة عالية لإنقاذ الأسنان المتضررة واستعادة وظيفتها الطبيعية.">
+            High-precision root canal therapy to save damaged teeth and restore their natural function.
+          </p>
+          <div class="service-number">01</div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-delay="100">
+          <div class="service-icon"><i class="fas fa-brush"></i></div>
+          <h3 data-en="Regular Fillings" data-ar="الحشو العادي">Regular Fillings</h3>
+          <p data-en="Aesthetic fillings using high-quality materials that restore the natural shape of teeth and protect them from decay." data-ar="حشوات تجميلية بمواد عالية الجودة تعيد للأسنان شكلها الطبيعي وتحميها من التسوس.">
+            Aesthetic fillings using high-quality materials that restore the natural shape of teeth and protect them from decay.
+          </p>
+          <div class="service-number">02</div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-delay="200">
+          <div class="service-icon"><i class="fas fa-crown"></i></div>
+          <h3 data-en="Fixed Prosthetics" data-ar="التركيبات الثابتة">Fixed Prosthetics</h3>
+          <p data-en="Porcelain and zircon prosthetics that give you a natural, beautiful smile that lasts long." data-ar="تركيبات بورسلين وزيركون تمنحك ابتسامة طبيعية جميلة وتدوم طويلاً.">
+            Porcelain and zircon prosthetics that give you a natural, beautiful smile that lasts long.
+          </p>
+          <div class="service-number">03</div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-delay="300">
+          <div class="service-icon"><i class="fas fa-hand-holding-medical"></i></div>
+          <h3 data-en="Pain-Free Extraction" data-ar="خلع الأسنان بدون ألم">Pain-Free Extraction</h3>
+          <p data-en="Tooth extraction using the latest techniques and effective anesthesia to ensure a completely pain-free experience." data-ar="خلع الأسنان باستخدام أحدث التقنيات وتخدير فعّال لضمان تجربة خالية تماماً من الألم.">
+            Tooth extraction using the latest techniques and effective anesthesia to ensure a completely pain-free experience.
+          </p>
+          <div class="service-number">04</div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-delay="400">
+          <div class="service-icon"><i class="fas fa-sparkles"></i></div>
+          <h3 data-en="Cleaning & Polishing" data-ar="تنظيف وتلميع الأسنان">Cleaning &amp; Polishing</h3>
+          <p data-en="Removal of tartar and stains, and polishing of teeth for a clean and bright smile." data-ar="إزالة الجير والتلوينات وتلميع الأسنان للحصول على ابتسامة نظيفة ومشرقة.">
+            Removal of tartar and stains, and polishing of teeth for a clean and bright smile.
+          </p>
+          <div class="service-number">05</div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-delay="500">
+          <div class="service-icon"><i class="fas fa-teeth"></i></div>
+          <h3 data-en="Removable Dentures" data-ar="التركيبات المتحركة">Removable Dentures</h3>
+          <p data-en="Comfortable, high-quality removable dentures that restore your chewing function and the beauty of your smile." data-ar="أطقم أسنان متحركة مريحة وعالية الجودة تستعيد بها وظيفة المضغ وجمال ابتسامتك.">
+            Comfortable, high-quality removable dentures that restore your chewing function and the beauty of your smile.
+          </p>
+          <div class="service-number">06</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag" data-en="Gallery" data-ar="معرض الصور">Gallery</div>
+        <h2 class="section-title" data-en="Before & After" data-ar="قبل وبعد">Before &amp; After</h2>
+        <p class="section-subtitle" data-en="Real results that speak for themselves — photos coming soon!" data-ar="نتائج حقيقية تتحدث عن نفسها — صور قريباً!">
+          Real results that speak for themselves — photos coming soon!
+        </p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-placeholder" data-aos="fade-up" data-delay="0">
+          <i class="fas fa-image"></i>
+          <span data-en="Photos Coming Soon" data-ar="الصور قريباً">Photos Coming Soon</span>
+        </div>
+        <div class="gallery-placeholder" data-aos="fade-up" data-delay="100">
+          <i class="fas fa-image"></i>
+          <span data-en="Photos Coming Soon" data-ar="الصور قريباً">Photos Coming Soon</span>
+        </div>
+        <div class="gallery-placeholder" data-aos="fade-up" data-delay="200">
+          <i class="fas fa-image"></i>
+          <span data-en="Photos Coming Soon" data-ar="الصور قريباً">Photos Coming Soon</span>
+        </div>
+        <div class="gallery-placeholder" data-aos="fade-up" data-delay="300">
+          <i class="fas fa-image"></i>
+          <span data-en="Photos Coming Soon" data-ar="الصور قريباً">Photos Coming Soon</span>
+        </div>
+        <div class="gallery-placeholder" data-aos="fade-up" data-delay="400">
+          <i class="fas fa-image"></i>
+          <span data-en="Photos Coming Soon" data-ar="الصور قريباً">Photos Coming Soon</span>
+        </div>
+        <div class="gallery-placeholder" data-aos="fade-up" data-delay="500">
+          <i class="fas fa-image"></i>
+          <span data-en="Photos Coming Soon" data-ar="الصور قريباً">Photos Coming Soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="cta-shapes">
+      <div class="cta-shape s1"></div>
+      <div class="cta-shape s2"></div>
+    </div>
+    <div class="container cta-container" data-aos="fade-up">
+      <div class="cta-icon"><i class="fas fa-tooth"></i></div>
+      <h2 data-en="Ready for a Better Smile?" data-ar="هل أنت مستعد لابتسامة أجمل؟">Ready for a Better Smile?</h2>
+      <p data-en="Don't wait any longer — book your appointment today and start your journey toward healthier, more beautiful teeth." data-ar="لا تنتظر أكثر — احجز موعدك اليوم وابدأ رحلتك نحو أسنان أكثر صحة وجمالاً">
+        Don't wait any longer — book your appointment today and start your journey toward healthier, more beautiful teeth.
+      </p>
+      <div class="cta-actions">
+        <a href="tel:01275109353" class="btn-white">
+          <i class="fas fa-phone"></i> 01275109353
+        </a>
+        <a href="https://wa.me/201275109353" target="_blank" class="btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          <span data-en="WhatsApp" data-ar="واتساب">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container contact-container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag" data-en="Get In Touch" data-ar="تواصل معنا">Get In Touch</div>
+        <h2 class="section-title" data-en="We're Here For You" data-ar="نحن هنا من أجلك">We're Here For You</h2>
+        <p class="section-subtitle" data-en="Reach out anytime and we'll be happy to serve you." data-ar="تواصل معنا في أي وقت وسيسعدنا خدمتك">
+          Reach out anytime and we'll be happy to serve you.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4 data-en="Call Us" data-ar="اتصل بنا">Call Us</h4>
+              <a href="tel:01275109353">01275109353</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4 data-en="Email" data-ar="البريد الإلكتروني">Email</h4>
+              <a href="mailto:abdo.abdo9876512340@gmail.com">abdo.abdo9876512340@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/201275109353" target="_blank" data-en="Start a Chat" data-ar="ابدأ محادثة">Start a Chat</a>
+            </div>
+          </div>
+          <div class="social-links">
+            <h4 data-en="Follow Us" data-ar="تابعنا على">Follow Us</h4>
+            <div class="socials">
+              <a href="https://www.facebook.com/share/1Dcxha3SYa/" target="_blank" class="social-btn facebook" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/dentabdelrahman" target="_blank" class="social-btn instagram" title="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.tiktok.com/@abdoashraf3621" target="_blank" class="social-btn tiktok" title="TikTok">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap" data-aos="fade-left">
+          <form class="contact-form" id="contactForm">
+            <h3 data-en="Send a Message" data-ar="أرسل رسالة">Send a Message</h3>
+            <div class="form-group">
+              <label for="name" data-en="Full Name" data-ar="الاسم">Full Name</label>
+              <input type="text" id="name" data-placeholder-en="Your full name" data-placeholder-ar="اسمك الكريم" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone" data-en="Phone Number" data-ar="رقم الهاتف">Phone Number</label>
+              <input type="tel" id="phone" placeholder="01xxxxxxxxx" required />
+            </div>
+            <div class="form-group">
+              <label for="service" data-en="Service Required" data-ar="الخدمة المطلوبة">Service Required</label>
+              <select id="service">
+                <option value="" data-en="Choose a service" data-ar="اختر الخدمة">Choose a service</option>
+                <option data-en="Root Canal Treatment" data-ar="حشو العصب">Root Canal Treatment</option>
+                <option data-en="Regular Fillings" data-ar="الحشو العادي">Regular Fillings</option>
+                <option data-en="Fixed Prosthetics" data-ar="التركيبات الثابتة">Fixed Prosthetics</option>
+                <option data-en="Pain-Free Extraction" data-ar="خلع الأسنان بدون ألم">Pain-Free Extraction</option>
+                <option data-en="Cleaning & Polishing" data-ar="تنظيف وتلميع الأسنان">Cleaning &amp; Polishing</option>
+                <option data-en="Removable Dentures" data-ar="التركيبات المتحركة">Removable Dentures</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" data-en="Message" data-ar="رسالتك">Message</label>
+              <textarea id="message" rows="4" data-placeholder-en="Write your message here..." data-placeholder-ar="اكتب رسالتك هنا..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width">
+              <i class="fas fa-paper-plane"></i>
+              <span data-en="Send Message" data-ar="إرسال">Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-logo">
+        <i class="fas fa-tooth"></i>
+        <div>
+          <span data-en="Dent / Abdelrahman Ashraf" data-ar="د/ عبدالرحمن أشرف">Dent / Abdelrahman Ashraf</span>
+          <small data-en="General Dentist" data-ar="طبيب أسنان عام">General Dentist</small>
+        </div>
+      </div>
+      <p class="footer-copy" data-en="© 2025 All rights reserved – Dr. Abdelrahman Ashraf" data-ar="© 2025 جميع الحقوق محفوظة لـ د/ عبدالرحمن أشرف">
+        © 2025 All rights reserved – Dr. Abdelrahman Ashraf
+      </p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/share/1Dcxha3SYa/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/dentabdelrahman" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@abdoashraf3621" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
