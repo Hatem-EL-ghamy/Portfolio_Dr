@@ -252,3 +252,112 @@ function showToast(msg, type = 'success') {
     setTimeout(() => toast.remove(), 400);
   }, 3500);
 }
+
+// === Gallery Lightbox ===
+const lightbox = document.getElementById('lightboxModal');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxTitle = document.getElementById('lightboxTitle');
+const lightboxDesc = document.getElementById('lightboxDesc');
+const lightboxCounter = document.getElementById('lightboxCounter');
+const btnClose = document.getElementById('lightboxClose');
+const btnPrev = document.getElementById('lightboxPrev');
+const btnNext = document.getElementById('lightboxNext');
+
+let currentGalleryImages = [];
+let currentImageIndex = 0;
+let currentCaseDescAr = '';
+let currentCaseDescEn = '';
+let currentCaseTitleAr = '';
+let currentCaseTitleEn = '';
+
+document.querySelectorAll('.gallery-card').forEach(card => {
+  card.addEventListener('click', () => {
+    // Extract images
+    const imgSpans = card.querySelectorAll('.case-images span');
+    currentGalleryImages = Array.from(imgSpans).map(span => span.getAttribute('data-src'));
+    
+    // Extract description & text
+    currentCaseDescAr = card.querySelector('.case-desc-ar').innerHTML;
+    currentCaseDescEn = card.querySelector('.case-desc-en').innerHTML;
+    
+    const titleEl = card.querySelector('.gallery-title');
+    currentCaseTitleAr = titleEl.getAttribute('data-ar');
+    currentCaseTitleEn = titleEl.getAttribute('data-en');
+
+    currentImageIndex = 0;
+    updateLightboxUI();
+
+    // Show modal
+    lightbox.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+function updateLightboxUI() {
+  if (currentGalleryImages.length === 0) return;
+  
+  // Set Image
+  lightboxImg.src = currentGalleryImages[currentImageIndex];
+  
+  // Set Text based on current active language
+  const isAr = currentLang === 'ar';
+  lightboxTitle.textContent = isAr ? currentCaseTitleAr : currentCaseTitleEn;
+  lightboxDesc.innerHTML = isAr ? currentCaseDescAr : currentCaseDescEn;
+  
+  // Set Counter
+  lightboxCounter.textContent = `${currentImageIndex + 1} / ${currentGalleryImages.length}`;
+  
+  // Toggle Prev/Next visibility based on array length
+  btnPrev.style.display = currentGalleryImages.length > 1 ? 'flex' : 'none';
+  btnNext.style.display = currentGalleryImages.length > 1 ? 'flex' : 'none';
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('show');
+  document.body.style.overflow = 'auto'; // restore scroll
+}
+
+function nextImage() {
+  currentImageIndex = (currentImageIndex + 1) % currentGalleryImages.length;
+  updateLightboxUI();
+}
+
+function prevImage() {
+  currentImageIndex = (currentImageIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
+  updateLightboxUI();
+}
+
+btnClose?.addEventListener('click', closeLightbox);
+btnNext?.addEventListener('click', nextImage);
+btnPrev?.addEventListener('click', prevImage);
+
+// Close when clicking outside of the content
+lightbox?.addEventListener('click', (e) => {
+  if (e.target === lightbox) {
+    closeLightbox();
+  }
+});
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+  if (!lightbox?.classList.contains('show')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowRight') {
+    if (document.documentElement.dir === 'rtl') prevImage(); else nextImage();
+  }
+  if (e.key === 'ArrowLeft') {
+    if (document.documentElement.dir === 'rtl') nextImage(); else prevImage();
+  }
+});
+
+// Hook into existing Language Toggle to update the lightbox text if it's open
+const langToggleBtn = document.getElementById('langToggle');
+if (langToggleBtn) {
+  // Add a secondary event listener that runs after applyLanguage
+  langToggleBtn.addEventListener('click', () => {
+    if (lightbox?.classList.contains('show')) {
+      updateLightboxUI();
+    }
+  });
+}
+
