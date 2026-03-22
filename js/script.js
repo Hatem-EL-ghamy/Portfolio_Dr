@@ -305,7 +305,9 @@ function updateLightboxUI() {
   lightboxDesc.innerHTML = isAr ? currentCaseDescAr : currentCaseDescEn;
   
   // Set Counter
-  lightboxCounter.textContent = `${currentImageIndex + 1} / ${currentGalleryImages.length}`;
+  lightboxCounter.textContent = isAr
+    ? `${currentImageIndex + 1} من ${currentGalleryImages.length}`
+    : `${currentImageIndex + 1} / ${currentGalleryImages.length}`;
   
   // Toggle Prev/Next visibility based on array length
   btnPrev.style.display = currentGalleryImages.length > 1 ? 'flex' : 'none';
