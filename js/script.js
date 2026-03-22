@@ -4,7 +4,7 @@
 // =========================================
 
 // === Language System ===
-let currentLang = localStorage.getItem('portfolioLang') || 'en';
+let currentLang = localStorage.getItem('dentLang') || 'en';
 
 function applyLanguage(lang) {
   const html = document.getElementById('htmlRoot');
@@ -47,7 +47,7 @@ function applyLanguage(lang) {
   }
 
   currentLang = lang;
-  localStorage.setItem('portfolioLang', lang);
+  localStorage.setItem('dentLang', lang);
 }
 
 // Init language on load

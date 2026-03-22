@@ -10,6 +10,7 @@ body { transition: direction 0s; }
 /* === RESET & ROOT === */
 *, *::before, *::after {
   margin: 0; padding: 0; box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 :root {
@@ -741,14 +742,17 @@ section { padding: 96px 0; }
 
 .service-number {
   position: absolute;
-  top: 20px;
-  left: 24px;
+  top: 36px;
+  right: 28px;
   font-size: 3.5rem;
   font-weight: 900;
-  color: var(--blue-100);
-  line-height: 1;
+  color: rgba(21, 101, 192, 0.05);
   font-family: 'Inter', sans-serif;
   transition: var(--transition);
+}
+[dir="rtl"] .service-number {
+  right: auto;
+  left: 28px;
 }
 .service-card:hover .service-number { color: rgba(21,101,192,0.12); }
 
